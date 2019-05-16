@@ -170,3 +170,24 @@ header .char {
   padding-bottom: 2%;
   text-align: center;
 }
+body {
+  width: 100%;
+  background-color: #EFF0F2;
+}
+body .bodyContainer {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+.bodyContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+}
+.bodyContent .article {
+  width: 30%;
+}
+.bodyContent .article img {
+  width: 100%;
+}

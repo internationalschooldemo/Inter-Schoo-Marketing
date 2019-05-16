@@ -3,7 +3,7 @@ header {
     width: 100%;
     background:@athensGray ;
     border-bottom: 2px dashed @blueCharcoal;
-    
+
     nav {
         display: flex;
         width: 85%;
@@ -40,11 +40,38 @@ header {
     }
 
     .char {
-        color: @bamboo;  
+        color: @bamboo;
         font-family: 'Arvo', serif;
         font-size: 1.2rem;
         padding-top: 4%;
         padding-bottom: 2%;
         text-align: center;
     }
+}
+
+body {
+  width: 100%;
+  background-color: @athensGray;
+
+  .bodyContainer {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.bodyContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+
+
+  .article {
+    width: 30%;
+
+    img {
+      width: 100%;
+    }
+  }
 }
