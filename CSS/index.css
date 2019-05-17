@@ -174,8 +174,8 @@ header .navContainer {
   background: #EFF0F2;
   justify-content: space-between;
 }
-header nav .logo {
-  height: 100px;
+header .navContainer .logo {
+  height: 90px;
 }
 header .navContainer nav {
   display: flex;
@@ -241,7 +241,7 @@ header .signUp {
 header .name {
   color: #D96704;
   font-family: 'Arvo', serif;
-  padding-top: 5%;
+  padding-top: 2%;
   text-align: center;
 }
 header .char {
