@@ -168,7 +168,7 @@ header {
   background: #EFF0F2;
   border-bottom: 10px double #03A6A6;
 }
-header nav {
+header .navContainer {
   display: flex;
   width: 85%;
   background: #EFF0F2;
@@ -177,18 +177,66 @@ header nav {
 header nav .logo {
   height: 100px;
 }
-header nav a {
+header .navContainer nav {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+header .navContainer nav a {
   font-size: 1.5rem;
   text-decoration: none;
   padding-top: 2.5%;
   margin-top: 0.5%;
 }
-header nav a:hover {
+header .navContainer nav a:hover {
   color: #F23041;
   background: #465E73;
 }
-header .sign {
+header .about {
   display: none;
+  width: 30%;
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  left: 30%;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 4%;
+  border-radius: 10px;
+  background: #03A6A6;
+  border: 1.4px solid blue;
+}
+header .signIn {
+  display: none;
+  width: 30%;
+  height: 220px;
+  z-index: 2;
+  position: absolute;
+  left: 30%;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 4%;
+  border-radius: 10px;
+  background: #03A6A6;
+  border: 1.4px solid blue;
+}
+header .signIn img {
+  width: 25%;
+  border-radius: 50%;
+}
+header .signUp {
+  display: none;
+  width: 30%;
+  height: 240px;
+  z-index: 2;
+  position: absolute;
+  left: 30%;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 4%;
+  border-radius: 10px;
+  background: #03A6A6;
+  border: 1.4px solid blue;
 }
 header .name {
   color: #D96704;

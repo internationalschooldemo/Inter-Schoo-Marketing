@@ -2,9 +2,8 @@ header {
     //display: flex;
     width: 100%;
     background:@athensGray ;
+    .navContainer {
     border-bottom: 10px double @persianGreen;
-
-    nav {
         display: flex;
         width: 85%;
         background:@athensGray ;
@@ -14,20 +13,73 @@ header {
             height: 100px;
         }
 
-        a {
-         font-size: 1.5rem;
-         text-decoration: none;
-         padding-top: 2.5%;
-         margin-top: 0.5%;
+        nav {
+            display: flex;
+            width:70%;
+            justify-content: space-between;
 
-         &:hover {
-         color: @pomegranate;
-         background: @blueBayoux;
-          }
+          a {
+             font-size: 1.5rem;
+             text-decoration: none;
+             padding-top: 2.5%;
+             margin-top: 0.5%;
+
+             &:hover {
+               color: @pomegranate;
+               background: @blueBayoux;
+               }
+            }
         }
     }
-    .sign {
+
+    .about {
         display: none;
+        width: 30%;
+        height: 100px;
+        z-index: 2;
+        position: absolute;
+        left: 30%;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 4%;
+        border-radius: 10px;
+        background: @persianGreen;
+        border: 1.4px solid blue;
+
+    }
+    .signIn {
+        display: none;
+        width: 30%;
+        height: 220px;
+        z-index: 2;
+        position: absolute;
+        left: 30%;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 4%;
+        border-radius: 10px;
+        background: @persianGreen;
+        border: 1.4px solid blue;
+
+        img {
+            width: 25%;
+            border-radius: 50%;
+        }
+
+    }
+    .signUp {
+        display: none;
+        width: 30%;
+        height: 240px;
+        z-index: 2;
+        position: absolute;
+        left: 30%;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 4%;
+        border-radius: 10px;
+        background: @persianGreen;
+        border: 1.4px solid blue;
     }
 
     .name {
