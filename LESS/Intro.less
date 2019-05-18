@@ -6,6 +6,8 @@ header {
     
     @media @phone {
       width: 100%;
+      padding-top: 4%;
+      margin: 0 auto;
     }
 
     .navContainer {
@@ -15,7 +17,7 @@ header {
         justify-content: space-between;
 
         @media @phone {
-          width: 100%;
+          width: 90%;
         }
 
         .logo {
@@ -55,6 +57,12 @@ header {
         background: @athensGray;
         border: 1.4px solid @persianGreen;
 
+        @media @phone {
+          width: 50%;
+          font-size: 2rem;
+          left: 40%;
+        }
+
         .exit {
           .exit();
 
@@ -90,6 +98,12 @@ header {
             border-radius: 50%;
         }
 
+        @media @phone {
+          width: 50%;
+          font-size: 2rem;
+          left: 40%;
+        }
+
     }
     .signUp {
         display: none;
@@ -112,6 +126,12 @@ header {
           }
         }
 
+        @media @phone {
+          width: 50%;
+          height: 260px;
+          left: 40%;
+        }
+
     }
 
     .name {
@@ -119,6 +139,10 @@ header {
         font-family: 'Arvo', serif;
         padding-top: 2%;
         text-align: center;
+
+        @media @phone {
+          font-size: 2rem;
+        }
     }
 
     .char {
@@ -127,6 +151,10 @@ header {
         padding-top: 2%;
         padding-bottom: 2%;
         text-align: center;
+
+        @media @phone {
+          font-size: 1.2rem;
+        }
     }
 }
 

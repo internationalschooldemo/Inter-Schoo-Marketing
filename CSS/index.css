@@ -171,6 +171,8 @@ header {
 @media (max-width: 500px) {
   header {
     width: 100%;
+    padding-top: 4%;
+    margin: 0 auto;
   }
 }
 header .navContainer {
@@ -181,7 +183,7 @@ header .navContainer {
 }
 @media (max-width: 500px) {
   header .navContainer {
-    width: 100%;
+    width: 90%;
   }
 }
 header .navContainer .logo {
@@ -216,6 +218,13 @@ header .about {
   background: #EFF0F2;
   border: 1.4px solid #03A6A6;
 }
+@media (max-width: 500px) {
+  header .about {
+    width: 50%;
+    font-size: 2rem;
+    left: 40%;
+  }
+}
 header .about .exit {
   display: flex;
   background-color: #03A6A6;
@@ -233,6 +242,11 @@ header .about .exit .exitX {
   color: white;
   margin-left: 85%;
   border-radius: 8px;
+}
+@media (max-width: 500px) {
+  header .about .exit .exitX {
+    color: #F23041;
+  }
 }
 header .about .exit .exitX:hover {
   background: #F23041;
@@ -268,12 +282,24 @@ header .signIn .exit .exitX {
   margin-left: 85%;
   border-radius: 8px;
 }
+@media (max-width: 500px) {
+  header .signIn .exit .exitX {
+    color: #F23041;
+  }
+}
 header .signIn .exit .exitX:hover {
   background: #F23041;
 }
 header .signIn img {
   width: 25%;
   border-radius: 50%;
+}
+@media (max-width: 500px) {
+  header .signIn {
+    width: 50%;
+    font-size: 2rem;
+    left: 40%;
+  }
 }
 header .signUp {
   display: none;
@@ -306,8 +332,20 @@ header .signUp .exit .exitX {
   margin-left: 85%;
   border-radius: 8px;
 }
+@media (max-width: 500px) {
+  header .signUp .exit .exitX {
+    color: #F23041;
+  }
+}
 header .signUp .exit .exitX:hover {
   background: #F23041;
+}
+@media (max-width: 500px) {
+  header .signUp {
+    width: 50%;
+    height: 260px;
+    left: 40%;
+  }
 }
 header .name {
   color: #D96704;
@@ -315,12 +353,22 @@ header .name {
   padding-top: 2%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  header .name {
+    font-size: 2rem;
+  }
+}
 header .char {
   color: #D96704;
   font-family: 'Arvo', serif;
   padding-top: 2%;
   padding-bottom: 2%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  header .char {
+    font-size: 1.2rem;
+  }
 }
 body {
   width: 100%;
