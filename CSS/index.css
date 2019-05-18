@@ -168,11 +168,21 @@ header {
   background: #EFF0F2;
   border-bottom: 10px double #03A6A6;
 }
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+}
 header .navContainer {
   display: flex;
   width: 85%;
   background: #EFF0F2;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header .navContainer {
+    width: 100%;
+  }
 }
 header .navContainer .logo {
   height: 90px;
@@ -194,31 +204,72 @@ header .navContainer nav a:hover {
 }
 header .about {
   display: none;
-  width: 30%;
-  height: 100px;
+  width: 20%;
+  font-size: 0.5rem;
+  height: 200px;
   z-index: 2;
   position: absolute;
-  left: 30%;
+  left: 78%;
   cursor: pointer;
   text-align: center;
-  padding-top: 4%;
   border-radius: 10px;
-  background: #03A6A6;
-  border: 1.4px solid blue;
+  background: #EFF0F2;
+  border: 1.4px solid #03A6A6;
+}
+header .about .exit {
+  display: flex;
+  background-color: #03A6A6;
+  margin-bottom: 4%;
+  border-radius: 10px;
+  height: 38px;
+  align-items: center;
+}
+header .about .exit .exitX {
+  width: 15%;
+  font-family: 'Arvo', serif;
+  font-size: 2rem;
+  padding-top: 1rem;
+  height: 29px;
+  color: white;
+  margin-left: 85%;
+  border-radius: 8px;
+}
+header .about .exit .exitX:hover {
+  background: #F23041;
 }
 header .signIn {
   display: none;
-  width: 30%;
+  width: 20%;
   height: 220px;
   z-index: 2;
   position: absolute;
-  left: 30%;
+  left: 78%;
   cursor: pointer;
   text-align: center;
-  padding-top: 4%;
   border-radius: 10px;
-  background: #03A6A6;
-  border: 1.4px solid blue;
+  background: #EFF0F2;
+  border: 1.4px solid #03A6A6;
+}
+header .signIn .exit {
+  display: flex;
+  background-color: #03A6A6;
+  margin-bottom: 4%;
+  border-radius: 10px;
+  height: 38px;
+  align-items: center;
+}
+header .signIn .exit .exitX {
+  width: 15%;
+  font-family: 'Arvo', serif;
+  font-size: 2rem;
+  padding-top: 1rem;
+  height: 29px;
+  color: white;
+  margin-left: 85%;
+  border-radius: 8px;
+}
+header .signIn .exit .exitX:hover {
+  background: #F23041;
 }
 header .signIn img {
   width: 25%;
@@ -226,17 +277,37 @@ header .signIn img {
 }
 header .signUp {
   display: none;
-  width: 30%;
-  height: 240px;
+  width: 20%;
+  height: 260px;
   z-index: 2;
   position: absolute;
-  left: 30%;
+  left: 78%;
   cursor: pointer;
   text-align: center;
-  padding-top: 4%;
   border-radius: 10px;
-  background: #03A6A6;
-  border: 1.4px solid blue;
+  background: #EFF0F2;
+  border: 1.4px solid #03A6A6;
+}
+header .signUp .exit {
+  display: flex;
+  background-color: #03A6A6;
+  margin-bottom: 4%;
+  border-radius: 10px;
+  height: 38px;
+  align-items: center;
+}
+header .signUp .exit .exitX {
+  width: 15%;
+  font-family: 'Arvo', serif;
+  font-size: 2rem;
+  padding-top: 1rem;
+  height: 29px;
+  color: white;
+  margin-left: 85%;
+  border-radius: 8px;
+}
+header .signUp .exit .exitX:hover {
+  background: #F23041;
 }
 header .name {
   color: #D96704;

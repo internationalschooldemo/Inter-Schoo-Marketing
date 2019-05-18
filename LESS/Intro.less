@@ -1,13 +1,22 @@
 header {
-    //display: flex;
+    
     width: 100%;
     background:@athensGray ;
     border-bottom: 10px double @persianGreen;
+    
+    @media @phone {
+      width: 100%;
+    }
+
     .navContainer {
         display: flex;
         width: 85%;
         background:@athensGray ;
         justify-content: space-between;
+
+        @media @phone {
+          width: 100%;
+        }
 
         .logo {
             height: 90px;
@@ -34,32 +43,47 @@ header {
 
     .about {
         display: none;
-        width: 30%;
-        height: 100px;
+        width: 20%;
+        font-size: 0.5rem;
+        height: 200px;
         z-index: 2;
         position: absolute;
-        left: 30%;
+        left: 78%;
         cursor: pointer;
         text-align: center;
-        padding-top: 4%;
         border-radius: 10px;
-        background: @persianGreen;
-        border: 1.4px solid blue;
+        background: @athensGray;
+        border: 1.4px solid @persianGreen;
+
+        .exit {
+          .exit();
+
+          .exitX {
+            .exitX();
+          }
+        }
 
     }
     .signIn {
         display: none;
-        width: 30%;
+        width: 20%;
         height: 220px;
         z-index: 2;
         position: absolute;
-        left: 30%;
+        left: 78%;
         cursor: pointer;
         text-align: center;
-        padding-top: 4%;
         border-radius: 10px;
-        background: @persianGreen;
-        border: 1.4px solid blue;
+        background: @athensGray;
+        border: 1.4px solid @persianGreen;
+
+        .exit {
+          .exit();
+
+          .exitX {
+            .exitX();
+          }
+        }
 
         img {
             width: 25%;
@@ -69,17 +93,25 @@ header {
     }
     .signUp {
         display: none;
-        width: 30%;
-        height: 240px;
+        width: 20%;
+        height: 260px;
         z-index: 2;
         position: absolute;
-        left: 30%;
+        left: 78%;
         cursor: pointer;
         text-align: center;
-        padding-top: 4%;
         border-radius: 10px;
-        background: @persianGreen;
-        border: 1.4px solid blue;
+        background: @athensGray;
+        border: 1.4px solid @persianGreen;
+
+        .exit {
+          .exit();
+
+          .exitX {
+            .exitX();
+          }
+        }
+
     }
 
     .name {
