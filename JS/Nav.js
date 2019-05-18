@@ -4,11 +4,17 @@ class Tab {
         this.data = `data-tb="${this.tab.dataset.tb}"`;
         this.itemElement = document.querySelector(`.tabs-item[${this.data}]`);
         this.tabItem = new TabItem(this.itemElement);
-        this.tab.addEventListener('click', () => this.select())
+        this.exit = this.itemElement.querySelector('.exitX');
+        this.tab.addEventListener('click', () => this.select());
+        this.exit.addEventListener('click', () => this.exitX())
     }
 select(){
      
      this.tabItem.select();
+}
+exitX(){
+     
+  this.tabItem.exitX();
 }
 }
 
@@ -21,8 +27,14 @@ class TabItem {
   
       this.tabContaint.style.display = 'block';
     }
+    exitX() {
+  
+      this.tabContaint.style.display = 'none';
+    }
   }
 
-tabs = document.querySelectorAll('.tab');
+let tabs = document.querySelectorAll('.tab');
 tabs.forEach(function(tab){return new Tab(tab)});
-console.log(tabs);
+
+
+
