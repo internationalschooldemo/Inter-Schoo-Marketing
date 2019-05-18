@@ -16,12 +16,58 @@
   <![endif]-->
 </head>
 <header>
+  <div class="navContainer">
+    <img class="logo" src="Assets/logo.png" alt="logo">
+    <nav>
+      <a class="tab" data-tb="1" href="#">About Us</a>
+      <a class="tab" data-tb="2" href="#">Sign Up</a>
+      <a class="tab" data-tb="3" href="#">Sign In</a>
+    </nav>
+  </div>
+  <div class="about tabs-item" data-tb="1">
+    <div class="exit">
+      <p class="exitX">X</p>
+    </div>
+    <h4>Do you want to know more about us? <a href="about.html">click here</a>.</h4>
+  </div>
+
+  <div class="signUp tabs-item" data-tb="2">
+    <div class="exit">
+      <p class="exitX">X</p>
+    </div>
+    <h5>Create a New Account</h5><br><br>
+    <form class="createAcoun">
+      <input type="text" name="firstName" value="First Name"><br><br>
+      <input type="text" name="lastName" value="Last Name"><br><br>
+      <input type="text" name="Email" value="email or mobile number"><br><br>
+      <input type="text" name="password" value="New Password"><br><br>
+    </form>
+    <button type="button" name="button">Sign Up</button>
+  </div>
+
+  <div class="signIn tabs-item" data-tb="3">
+    <div class="exit">
+      <p class="exitX">X</p>
+    </div>
+    <img src="Assets/logo.png" alt="logo"><br><br>
+    <form class="login" method="get" action="home.html">
+      <input type="text" name="Email" value="email or mobile number"><br><br>
+      <input type="password" name="password"><br><br>
+      <button type="submit" name="button">Sign In</button>
+    </form>
+    <br><br>
+    <a>Forgot account?</a>
+  </div>
+
+
+  <h1 class="name">International School Social Worker</h1>
+  <h3 class="char">We Support Leaders, Advocates, and Champions.</h3>
 
 </header>
 
 <body>
-    
+
 </body>
 <footer>
-        copyright info
+  copyright info
 </footer>

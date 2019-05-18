@@ -1,0 +1,177 @@
+header {
+
+    width: 100%;
+    background:@athensGray ;
+    border-bottom: 10px double @persianGreen;
+
+    @media @phone {
+      width: 99%;
+      padding-top: 4%;
+      margin: 0 auto;
+    }
+
+    .navContainer {
+        display: flex;
+        width: 85%;
+        background:@athensGray ;
+        justify-content: space-between;
+
+        @media @phone {
+          width: 90%;
+          flex-direction: column;
+          margin: auto;
+        }
+
+        .logo {
+            height: 125px;
+
+            @media @phone {
+              height: auto;
+              width: 100%;
+            }
+        }
+
+        nav {
+            display: flex;
+            width:70%;
+            justify-content: space-between;
+            align-items: center;
+
+            @media @phone {
+              width: 100%;
+            }
+
+          a {
+              border: 6px double @persianGreen;
+              border-radius: 50%;
+              height: 2.8rem;
+              width: 25%;
+              text-align: center;
+              vertical-align: middle;
+              font-size: 1.4rem;
+              text-decoration: none;
+              padding-top: 2.5%;
+              margin-top: 0.5%;
+
+             &:hover {
+               color: @pomegranate;
+               background: @blueBayoux;
+               }
+            }
+        }
+    }
+
+    .about {
+        display: none;
+        width: 20%;
+        font-size: 0.5rem;
+        height: 200px;
+        z-index: 2;
+        position: absolute;
+        left: 78%;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 10px;
+        background: @athensGray;
+        border: 1.4px solid @persianGreen;
+
+        @media @phone {
+          width: 50%;
+          // font-size: 2rem;
+          left: 40%;
+        }
+
+        .exit {
+          .exit();
+
+          .exitX {
+            .exitX();
+          }
+        }
+
+    }
+    .signIn {
+        display: none;
+        width: 20%;
+        height: 220px;
+        z-index: 2;
+        position: absolute;
+        left: 78%;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 10px;
+        background: @athensGray;
+        border: 1.4px solid @persianGreen;
+
+        .exit {
+          .exit();
+
+          .exitX {
+            .exitX();
+          }
+        }
+
+        img {
+            width: 25%;
+            border-radius: 50%;
+        }
+
+        @media @phone {
+          width: 50%;
+          // font-size: 2rem;
+          left: 40%;
+        }
+
+    }
+    .signUp {
+        display: none;
+        width: 20%;
+        height: 260px;
+        z-index: 2;
+        position: absolute;
+        left: 78%;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 10px;
+        background: @athensGray;
+        border: 1.4px solid @persianGreen;
+
+        .exit {
+          .exit();
+
+          .exitX {
+            .exitX();
+          }
+        }
+
+        @media @phone {
+          width: 50%;
+          height: 260px;
+          left: 40%;
+        }
+
+    }
+
+    .name {
+        color: @bamboo;
+        font-family: 'Arvo', serif;
+        padding-top: 2%;
+        text-align: center;
+
+        @media @phone {
+          // font-size: 2rem;
+        }
+    }
+
+    .char {
+        color: @bamboo;
+        font-family: 'Arvo', serif;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+
+        @media @phone {
+          // font-size: 1.2rem;
+        }
+    }
+}
