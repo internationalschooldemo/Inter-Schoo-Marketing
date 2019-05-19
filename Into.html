@@ -18,7 +18,7 @@
 </head>
 <header>
   <div class="navContainer">
-    <img class="logo" src="Assets/logo.png" alt="logo">
+    <img id="imglogo"class="logo" src="Assets/logo.png" alt="logo">
     <nav>
       <a class="tab" data-tb="1" href="#">About Us</a>
       <a class="tab" data-tb="2" href="#">Sign Up</a>
@@ -38,10 +38,10 @@
     </div>
     <h5>Create a New Account</h5><br><br>
     <form class="createAcoun">
-      <input type="text" name="firstName" value="First Name"><br><br>
-      <input type="text" name="lastName" value="Last Name"><br><br>
-      <input type="text" name="Email" value="email or mobile number"><br><br>
-      <input type="text" name="password" value="New Password"><br><br>
+      <input type="text" name="firstName" placeholder="First Name"><br><br>
+      <input type="text" name="lastName" placeholder="Last Name"><br><br>
+      <input type="text" name="Email" placeholder="email or mobile number"><br><br>
+      <input type="text" name="password" placeholder="New Password"><br><br>
     </form>
     <button type="button" name="button">Sign Up</button>
   </div>
@@ -52,7 +52,7 @@
     </div>
     <img src="Assets/logo.png" alt="logo"><br><br>
     <form class="login" method="get" action="home.html">
-      <input type="text" name="Email" value="email or mobile number"><br><br>
+      <input type="text" name="Email" placeholder="email or mobile number"><br><br>
       <input type="password" name="password"><br><br>
       <button type="submit" name="button">Sign In</button>
     </form>
@@ -92,8 +92,9 @@
           for clear identification of areas of success and areas of need of improvement.</p>
       </div>
     </div>
-
-    <button type="button" name="button">Sign Up</button>
+  
+    <a  href ="#imglogo" class="tab button" data-tb="2" >Sign Up</a>
+    
   </div>
 </body>
 
