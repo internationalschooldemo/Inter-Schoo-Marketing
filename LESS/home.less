@@ -37,10 +37,15 @@ a {
     width: 10%;
     text-align: center;
     vertical-align: middle;
-    font-size: 150%;
+    font-size: 1.4rem;
     text-decoration: none;
     padding-top: 1.5%;
     margin-top: 0.5%;
+
+    @media @phone {
+      width: 15%;
+      padding-top: 2.5%;
+    }
 
    &:hover {
      color: @pomegranate;

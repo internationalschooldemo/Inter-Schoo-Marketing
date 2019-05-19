@@ -314,10 +314,16 @@ footer {
   width: 10%;
   text-align: center;
   vertical-align: middle;
-  font-size: 150%;
+  font-size: 1.4rem;
   text-decoration: none;
   padding-top: 1.5%;
   margin-top: 0.5%;
+}
+@media (max-width: 500px) {
+  .homenavcontaner .hometabs a {
+    width: 15%;
+    padding-top: 2.5%;
+  }
 }
 .homenavcontaner .hometabs a:hover {
   color: #F23041;
