@@ -364,6 +364,25 @@ footer {
   width: 22.5%;
   border: 2px single #D96704;
 }
+.aboutSection {
+  margin-left: 16px;
+}
+.carousels {
+  display: flex;
+  width: 80%;
+  height: 500px;
+  border: 10px double #03A6A6;
+  border-radius: 2%;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  margin: 5% auto;
+}
+.carousels .carousel {
+  width: 100%;
+  display: none;
+}
 header {
   width: 100%;
   background: #EFF0F2;
