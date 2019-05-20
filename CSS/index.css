@@ -206,25 +206,7 @@ body .bodyContainer {
     width: 100%;
   }
 }
-body .bodyContainer button {
-  border: 6px double #D96704;
-  border-radius: 50%;
-  width: 25%;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 1.4rem;
-  text-decoration: none;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-body .bodyContainer button:hover {
-  color: #03A6A6;
-  background: #465E73;
-}
-body h3 {
-  color: #F23041;
-}
-.bodyContent {
+body .bodyContainer .bodyContent {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -233,38 +215,55 @@ body h3 {
   margin: 10px auto;
 }
 @media (max-width: 500px) {
-  .bodyContent {
+  body .bodyContainer .bodyContent {
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
 }
-.bodyContent .article {
+body .bodyContainer .bodyContent .article {
   height: 100%;
   width: 30%;
   padding: 10px;
 }
 @media (max-width: 500px) {
-  .bodyContent .article {
+  body .bodyContainer .bodyContent .article {
     width: 90%;
     height: auto;
     padding: 0;
   }
 }
-.bodyContent .article h4 {
+body .bodyContainer .bodyContent .article h4 {
   color: #F23041;
   text-align: center;
 }
-.bodyContent .article img {
+body .bodyContainer .bodyContent .article img {
   width: 100%;
   border-radius: 50%;
   margin: 20px auto;
   border: 6px double #03A6A6;
 }
 @media (max-width: 500px) {
-  .bodyContent .article img {
+  body .bodyContainer .bodyContent .article img {
     max-width: 99%;
   }
+}
+body .bodyContainer .button {
+  display: inline-block;
+  border: 6px double #D96704;
+  border-radius: 50%;
+  width: 10%;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 2%;
+  margin-top: 0.5%;
+}
+body .bodyContainer .button:hover {
+  color: #03A6A6;
+  background: #465E73;
+}
+body .bodyContainer h3 {
+  color: #F23041;
 }
 footer {
   margin-top: 20px;
@@ -274,6 +273,61 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.homenavcontaner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .homenavcontaner {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+.homenavcontaner .logo {
+  height: 125px;
+}
+@media (max-width: 500px) {
+  .homenavcontaner .logo {
+    height: auto;
+    width: 100%;
+  }
+}
+.homenavcontaner .hometabs {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3%;
+}
+@media (max-width: 500px) {
+  .homenavcontaner .hometabs {
+    width: 100%;
+  }
+}
+.homenavcontaner .hometabs a {
+  border: 6px double #03A6A6;
+  border-radius: 50%;
+  height: 2.8rem;
+  width: 10%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding-top: 1.5%;
+  margin-top: 0.5%;
+}
+@media (max-width: 500px) {
+  .homenavcontaner .hometabs a {
+    width: 15%;
+    padding-top: 2.5%;
+  }
+}
+.homenavcontaner .hometabs a:hover {
+  color: #F23041;
+  background: #465E73;
 }
 .homeContainer {
   display: flex;
@@ -309,6 +363,25 @@ footer {
 .topPart .totalStudents {
   width: 22.5%;
   border: 2px single #D96704;
+}
+.aboutSection {
+  margin-left: 16px;
+}
+.carousels {
+  display: flex;
+  width: 80%;
+  height: 500px;
+  border: 10px double #03A6A6;
+  border-radius: 2%;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  margin: 5% auto;
+}
+.carousels .carousel {
+  width: 100%;
+  display: none;
 }
 header {
   width: 100%;
@@ -456,6 +529,9 @@ header .signIn .exit .exitX {
 header .signIn .exit .exitX:hover {
   background: #F23041;
 }
+header .signIn input {
+  width: 80%;
+}
 header .signIn img {
   width: 25%;
   border-radius: 50%;
@@ -504,6 +580,9 @@ header .signUp .exit .exitX {
 }
 header .signUp .exit .exitX:hover {
   background: #F23041;
+}
+header .signUp input {
+  width: 80%;
 }
 @media (max-width: 500px) {
   header .signUp {
