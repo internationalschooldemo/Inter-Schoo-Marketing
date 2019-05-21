@@ -336,16 +336,16 @@ footer {
   width: 95%;
   margin: 1rem auto;
 }
-.homeContainer .navSection {
-  width: 22.5%;
-}
 .homeContainer .contentSection {
   display: flex;
   flex-direction: column;
-  width: 72.5%;
+  width: 90%;
+  border: 3px double #03A6A6;
 }
 .homeContainer .contentSection div {
-  border: 6px double #03A6A6;
+  margin: 10px;
+  border: 2px ridge #F23041;
+  maxheight: 300px;
 }
 .topPart {
   display: flex;
