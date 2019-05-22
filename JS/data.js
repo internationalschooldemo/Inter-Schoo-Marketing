@@ -122,7 +122,7 @@ const school = [{
   }
 ]
 
-schoolIndex = 1
+schoolIndex = 0
 
 studentTotal = document.querySelector('.totalStudents p');
 studentTotal.textContent = `${school[schoolIndex].students.length} Students`;
@@ -135,8 +135,23 @@ visTwo = document.querySelector('.visitLog').lastElementChild;
 visOne.textContent = `Previous visit: ${school[schoolIndex].visitOne}`;
 visTwo.textContent = `Last visit: ${school[schoolIndex].visitTwo}`;
 
-console.log(school[0].students[4].name);
-console.log(school[0].students.length);
+for (var i = 0; i < school[schoolIndex].students.length; i++) {
+
+  var newTempTr = document.createElement('tr');
+  var tempTbod = document.querySelector('tbody');
+  tempTbod.appendChild(newTempTr);
+
+  Object.values(school[schoolIndex].students[i]).forEach(data => {
+    // var tableRow = document.querySelector('tbody tr');
+
+    var tempTd = document.createElement('td');
+    tempTd.textContent = `${data}`;
+    newTempTr.appendChild(tempTd);
+  })
+
+};
+
+
 //   },
 //   {
 //     "id": 7,

@@ -70,9 +70,17 @@ a {
     border: 3px double @persianGreen;
 
     div {
-      margin: 10px;
+      margin: 7.5px;
       border: 2px ridge @pomegranate;
-      max height: 300px;
+      padding: 5px;
+
+      div {
+        border: 2px ridge @blueBayoux;
+      }
+
+      div.schoolName {
+        flex-grow: 3;
+      }
     }
   }
 }
@@ -95,5 +103,22 @@ a {
   .totalStudents {
     width: 22.5%;
     border: 2px single @bamboo
+  }
+}
+
+.middlePart {
+  table {
+    margin: 1%;
+    width: 98%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  td, tr {
+    padding: 5px;
+  }
+
+  td {
+    border: 2px ridge @blueBayoux;
   }
 }

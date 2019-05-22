@@ -343,9 +343,15 @@ footer {
   border: 3px double #03A6A6;
 }
 .homeContainer .contentSection div {
-  margin: 10px;
+  margin: 7.5px;
   border: 2px ridge #F23041;
-  maxheight: 300px;
+  padding: 5px;
+}
+.homeContainer .contentSection div div {
+  border: 2px ridge #465E73;
+}
+.homeContainer .contentSection div div.schoolName {
+  flex-grow: 3;
 }
 .topPart {
   display: flex;
@@ -363,6 +369,19 @@ footer {
 .topPart .totalStudents {
   width: 22.5%;
   border: 2px single #D96704;
+}
+.middlePart table {
+  margin: 1%;
+  width: 98%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.middlePart td,
+.middlePart tr {
+  padding: 5px;
+}
+.middlePart td {
+  border: 2px ridge #465E73;
 }
 .aboutSection {
   margin-left: 16px;
