@@ -15,7 +15,7 @@
         @media @phone {
       height: auto;
       width: 100%;
-      
+
     }
 }
 
@@ -63,17 +63,24 @@ a {
   width: 95%;
   margin: 1rem auto;
 
-  .navSection {
-    width: 22.5%;
-  }
-
   .contentSection {
     display: flex;
     flex-direction: column;
-    width: 72.5%;
+    width: 90%;
+    border: 3px double @persianGreen;
 
     div {
-      border: 6px double @persianGreen;
+      margin: 7.5px;
+      border: 2px ridge @pomegranate;
+      padding: 5px;
+
+      div {
+        border: 2px ridge @blueBayoux;
+      }
+
+      div.schoolName {
+        flex-grow: 3;
+      }
     }
   }
 }
@@ -96,5 +103,22 @@ a {
   .totalStudents {
     width: 22.5%;
     border: 2px single @bamboo
+  }
+}
+
+.middlePart {
+  table {
+    margin: 1%;
+    width: 98%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  td, tr {
+    padding: 5px;
+  }
+
+  td {
+    border: 2px ridge @blueBayoux;
   }
 }
