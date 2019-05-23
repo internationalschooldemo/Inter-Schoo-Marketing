@@ -142,7 +142,6 @@ for (var i = 0; i < school[schoolIndex].students.length; i++) {
   tempTbod.appendChild(newTempTr);
 
   Object.values(school[schoolIndex].students[i]).forEach(data => {
-    // var tableRow = document.querySelector('tbody tr');
 
     var tempTd = document.createElement('td');
     tempTd.textContent = `${data}`;
@@ -151,30 +150,3 @@ for (var i = 0; i < school[schoolIndex].students.length; i++) {
 
 };
 
-
-//   },
-//   {
-//     "id": 7,
-//     "first_name": "Robbi",
-//     "university": "Salem University",
-//     "email": "rbrister6@redcross.org"
-//   },
-//   {
-//     "id": 8,
-//     "first_name": "Colline",
-//     "university": "Coastal Carolina University",
-//     "email": "cbrosh7@alibaba.com"
-//   },
-//   {
-//     "id": 9,
-//     "first_name": "Michail",
-//     "university": "Universidad Católica de Ávila",
-//     "email": "mrome8@shinystat.com"
-//   },
-//   {
-//     "id": 10,
-//     "first_name": "Hube",
-//     "university": "Universitat Rovira I Virgili Tarragona",
-//     "email": "hlethbrig9@foxnews.com"
-//   }
-// ]
