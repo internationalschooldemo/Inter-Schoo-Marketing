@@ -82,5 +82,31 @@ footer {
   border-top: 1px double @persianGreen;
   display: flex;
   justify-content: center;
+  vertical-align: middle;
   align-items: center;
+  background: @persianGreen;
+  cursor: cell;
+
+  .socialmedia{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .fb{
+      height: 40px;
+    }
+    img {
+      &:hover {
+        background: @blueBayoux;
+      }
+    }
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  @media @phone {
+    flex-direction: column;
+  }
 }

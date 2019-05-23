@@ -262,7 +262,29 @@ footer {
   border-top: 1px double #03A6A6;
   display: flex;
   justify-content: center;
+  vertical-align: middle;
   align-items: center;
+  background: #03A6A6;
+  cursor: cell;
+}
+footer .socialmedia {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .socialmedia .fb {
+  height: 40px;
+}
+footer .socialmedia img:hover {
+  background: #465E73;
+}
+footer .copyright {
+  color: white;
+}
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
 }
 .homenavcontaner {
   display: flex;
