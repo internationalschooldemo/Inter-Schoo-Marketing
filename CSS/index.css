@@ -281,7 +281,7 @@ footer .socialmedia img:hover {
 footer .copyright {
   color: white;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer {
     flex-direction: column;
   }
