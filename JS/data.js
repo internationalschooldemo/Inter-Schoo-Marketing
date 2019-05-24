@@ -122,7 +122,8 @@ const school = [{
   }
 ]
 
-schoolIndex = 0
+const schoolIndex = document.getElementById("scoolId").value;
+console.log(schoolIndex);
 
 studentTotal = document.querySelector('.totalStudents p');
 studentTotal.textContent = `${school[schoolIndex].students.length} Students`;
