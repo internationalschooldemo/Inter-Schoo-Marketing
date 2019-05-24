@@ -404,6 +404,21 @@ footer .copyright {
   width: 100%;
   display: none;
 }
+.gitAcc {
+  display: flex;
+  width: 80%;
+  align-self: center;
+  justify-content: space-around;
+  margin-left: 10%;
+}
+.gitAcc address {
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .gitAcc {
+    flex-direction: column-reverse;
+  }
+}
 header {
   width: 100%;
   background: #EFF0F2;
@@ -508,7 +523,7 @@ header .about .exit .exitX:hover {
 header .signIn {
   display: none;
   width: 20%;
-  height: 220px;
+  height: 260px;
   z-index: 2;
   position: absolute;
   left: 78%;
@@ -613,16 +628,12 @@ header .name {
   text-align: center;
   font-weight: bold;
 }
-@media (max-width: 500px) {
-}
 header .char {
   color: #D96704;
   font-family: 'Arvo', serif;
   padding-top: 2%;
   padding-bottom: 2%;
   text-align: center;
-}
-@media (max-width: 500px) {
 }
 .fill {
   border: 2px solid #F23041;

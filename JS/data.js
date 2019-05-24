@@ -122,27 +122,31 @@ const school = [{
   }
 ]
 
-schoolIndex = 0
+function getStudents() {
+
+const schoolIndex = document.getElementById("scoolId").value;
 
 studentTotal = document.querySelector('.totalStudents p');
-studentTotal.textContent = `${school[schoolIndex].students.length} Students`;
+studentTotal.textContent = `${school[schoolIndex-1].students.length} Students`;
 
 schooName = document.querySelector('.schoolName p');
-schooName.textContent = `${school[schoolIndex].school_name}`;
+schooName.textContent = `${school[schoolIndex-1].school_name}`;
 
 visOne = document.querySelector('.visitLog').firstElementChild;
 visTwo = document.querySelector('.visitLog').lastElementChild;
-visOne.textContent = `Previous visit: ${school[schoolIndex].visitOne}`;
-visTwo.textContent = `Last visit: ${school[schoolIndex].visitTwo}`;
+visOne.textContent = `Previous visit: ${school[schoolIndex-1].visitOne}`;
+visTwo.textContent = `Last visit: ${school[schoolIndex-1].visitTwo}`;
+const removeElements = (elms) => elms.forEach(el => el.remove());
+removeElements( document.querySelectorAll(".newtr") );
 
-for (var i = 0; i < school[schoolIndex].students.length; i++) {
-
-  var newTempTr = document.createElement('tr');
+for (var i = 0; i < school[schoolIndex-1].students.length; i++) {
   var tempTbod = document.querySelector('tbody');
+  var newTempTr = document.createElement('tr');
+  newTempTr.className = 'newtr';
+  
   tempTbod.appendChild(newTempTr);
 
-  Object.values(school[schoolIndex].students[i]).forEach(data => {
-    // var tableRow = document.querySelector('tbody tr');
+  Object.values(school[schoolIndex-1].students[i]).forEach(data => {
 
     var tempTd = document.createElement('td');
     tempTd.textContent = `${data}`;
@@ -150,31 +154,4 @@ for (var i = 0; i < school[schoolIndex].students.length; i++) {
   })
 
 };
-
-
-//   },
-//   {
-//     "id": 7,
-//     "first_name": "Robbi",
-//     "university": "Salem University",
-//     "email": "rbrister6@redcross.org"
-//   },
-//   {
-//     "id": 8,
-//     "first_name": "Colline",
-//     "university": "Coastal Carolina University",
-//     "email": "cbrosh7@alibaba.com"
-//   },
-//   {
-//     "id": 9,
-//     "first_name": "Michail",
-//     "university": "Universidad Católica de Ávila",
-//     "email": "mrome8@shinystat.com"
-//   },
-//   {
-//     "id": 10,
-//     "first_name": "Hube",
-//     "university": "Universitat Rovira I Virgili Tarragona",
-//     "email": "hlethbrig9@foxnews.com"
-//   }
-// ]
+}

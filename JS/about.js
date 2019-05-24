@@ -1,9 +1,9 @@
-var index = 0;
+let index = 0;
 carouselShow();
 
 function carouselShow() {
-  var i;
-  var carousel = document.querySelectorAll('.carousel');
+  let i;
+  const carousel = document.querySelectorAll('.carousel');
   
   for (i = 0; i < carousel.length; i++) {
     carousel[i].style.display = "none";  
